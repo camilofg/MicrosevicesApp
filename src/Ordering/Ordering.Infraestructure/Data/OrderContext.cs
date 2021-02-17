@@ -13,5 +13,12 @@ namespace Ordering.Infrastructure.Data
         }
 
         public DbSet<Order> Orders { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            modelBuilder.Entity<Order>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+            });
+        }
     }
 }

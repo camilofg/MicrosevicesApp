@@ -1,35 +1,46 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\camus\\source\\repos\\MicroservicesApp\\src\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {}
+    "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\camus\\source\\repos\\MicroservicesApp\\src\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
+    "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\camus\\source\\repos\\MicroservicesApp\\src\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
+        "projectUniqueName": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
         "projectName": "Ordering.Application",
-        "projectPath": "C:\\Users\\camus\\source\\repos\\MicroservicesApp\\src\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
-        "packagesPath": "C:\\Users\\camus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\camus\\source\\repos\\MicroservicesApp\\src\\Ordering\\Ordering.Application\\obj\\",
+        "projectPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
+        "packagesPath": "C:\\Users\\raul.forero\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\camus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\raul.forero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/agrofylibrary/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Core\\Ordering.Core.csproj": {
+                "projectPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Core\\Ordering.Core.csproj"
+              },
+              "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Infraestructure\\Ordering.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Infraestructure\\Ordering.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,6 +51,21 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.2.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +81,157 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Core\\Ordering.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Core\\Ordering.Core.csproj",
+        "projectName": "Ordering.Core",
+        "projectPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Core\\Ordering.Core.csproj",
+        "packagesPath": "C:\\Users\\raul.forero\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\raul.forero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/agrofylibrary/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Infraestructure\\Ordering.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Infraestructure\\Ordering.Infrastructure.csproj",
+        "projectName": "Ordering.Infrastructure",
+        "projectPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Infraestructure\\Ordering.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\raul.forero\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\raul.forero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/agrofylibrary/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Core\\Ordering.Core.csproj": {
+                "projectPath": "C:\\Users\\raul.forero\\Source\\Repos\\MicrosevicesApp\\src\\Ordering\\Ordering.Core\\Ordering.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

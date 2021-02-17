@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Ordering.API.Extensions;
 using Ordering.Infrastructure.Data;
 
 namespace Ordering.API
@@ -16,7 +17,8 @@ namespace Ordering.API
         public static void Main(string[] args)
         {
          var host = CreateHostBuilder(args).Build();
-         CreateAndSeedDatabase(host);
+            //CreateAndSeedDatabase(host);
+            _ = host.MigrateDatabase<OrderContext>();
          host.Run();
         }
 
